@@ -4,18 +4,26 @@ A terraform set up for provisioning an AWS API Gateway, Lambda function, DynamoD
 
 ## Requirements
 
-If not done already, an AWS profile needs to be configured on your device. You can do this via the AWS CLI (v2).
+### AWS profile
+
+If not done already, an AWS profile needs to be configured on your device. You can do this via the AWS CLI (v2) - https://aws.amazon.com/cli/
 Run `aws configure`
 You will be prompted for your for your AWS Access Key and Secret Key.
+
+### Terraform cli
+
+You'll need the terraform cli to provision the infrastructure.
+See https://www.terraform.io/ for installation details.
 
 ## Overview
 
 This terraform set will provision:
-A DynamoDB table named ProductCollections. This can be easily changed in the code.
-A Lambda function
-An AWS HTTP API Gateway
-CloudWatch log groups for API Gateway and Lambda.
-AWS role policies for invoking the lambda function and creating logs.
+
+- A DynamoDB table named ProductCollections. This can be easily changed in the code.
+- A Lambda function
+- An AWS HTTP API Gateway
+- CloudWatch log groups for API Gateway and Lambda.
+- AWS role policies for invoking the lambda function and creating logs.
 
 ## Provisioning AWS Infrastructure
 
