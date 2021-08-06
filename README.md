@@ -5,13 +5,13 @@ A terraform set up for provisioning an AWS API Gateway, Lambda function, DynamoD
 ## Requirements
 
 ### AWS profile
-If not done already, an AWS profile needs to be configured on your device. You can do this via the AWS CLI (v2) - https://aws.amazon.com/cli/ 
-Run `aws configure`
+If not done already, an AWS profile needs to be configured on your device. You can do this via the AWS CLI (v2) - https://aws.amazon.com/cli/   
+Run `aws configure`. 
 You will be prompted for your for your AWS Access Key and Secret Key.
 
 ### Terraform cli
-You'll need the terraform cli to provision the infrastructure.
-See https://www.terraform.io/ for installation details.
+You'll need the terraform cli to provision the infrastructure.  
+See https://www.terraform.io/ for installation details.  
 
 ## Overview
 
@@ -44,7 +44,7 @@ Get details of an item with the given id.
 
 ### PUT /items
 
-Create or Update items. To update an item, include {"id": "someId"} in the body.
+Create or Update items. To update an item, include {"id": "someId"} in the body.  
 ID's are not assigned to items by default in DynamoDB. The lambda function will assign a timestamp by default, so supplying an id is not required.
 
 ### DELETE /items/{id}
