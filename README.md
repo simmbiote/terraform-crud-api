@@ -1,6 +1,6 @@
 # terraform-crud-api
 
-A terraform set up for provisioning an AWS API Gateway, Lambda function, DynamoDB table and associated CloudWatch logs.
+A terraform set up for provisioning an AWS API Gateway, Lambda function, DynamoDB table and associated CloudWatch logs.  
 Disclaimer: While this may be suitable for prototyping, it should not be used for production without adding authentication on the API Gateway, and setting up backups for the DynamoDB table.
 
 ## Requirements
